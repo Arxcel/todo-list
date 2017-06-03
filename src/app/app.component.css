@@ -1,0 +1,112 @@
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-top: 7vw; }
+  .wrap .todo {
+    -ms-flex-preferred-size: 30vw;
+        flex-basis: 30vw; }
+    .wrap .todo-header {
+      text-transform: uppercase;
+      padding: 0.1vw;
+      border-radius: 10px 10px 0 0;
+      -webkit-box-shadow: 0 0 10px #cccccc;
+              box-shadow: 0 0 10px #cccccc;
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#2780e7), to(#4798ea));
+      background-image: linear-gradient(to top, #2780e7, #4798ea); }
+      .wrap .todo-header h1 {
+        font-size: 3rem; }
+    .wrap .todo-input {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      .wrap .todo-input .new-todo {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        background: transparent;
+        border: none;
+        background: white;
+        margin: 1vw;
+        padding: 0 .5vw; }
+      .wrap .todo-input button {
+        background: none;
+        border: none;
+        -ms-flex-preferred-size: 25px;
+            flex-basis: 25px;
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+        color: #b1d1f6;
+        font-size: 18px;
+        padding-right: 20px;
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.7); }
+        .wrap .todo-input button:hover {
+          color: white;
+          cursor: pointer;
+          -webkit-transform: scale(1.2);
+                  transform: scale(1.2); }
+    .wrap .todo-main {
+      background-color: white; }
+      .wrap .todo-main-list {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 0; }
+        .wrap .todo-main-list li .view {
+          height: 30px;
+          border-bottom: 1px solid #cccccc;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: stretch;
+              -ms-flex-align: stretch;
+                  align-items: stretch;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+          .wrap .todo-main-list li .view .toggle {
+            -webkit-box-flex: 0;
+                -ms-flex-positive: 0;
+                    flex-grow: 0;
+            -ms-flex-preferred-size: 40px;
+                flex-basis: 40px;
+            -ms-flex-item-align: center;
+                align-self: center;
+            margin: 0 1vw; }
+          .wrap .todo-main-list li .view label {
+            -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                    flex-grow: 1;
+            text-align: left; }
+          .wrap .todo-main-list li .view .destroy {
+            -ms-flex-preferred-size: 35px;
+                flex-basis: 35px;
+            -webkit-box-flex: 0;
+                -ms-flex-positive: 0;
+                    flex-grow: 0;
+            -ms-flex-item-align: center;
+                align-self: center;
+            color: #2780e7;
+            border: none;
+            background: none;
+            margin: 0 1vw; }
+            .wrap .todo-main-list li .view .destroy:hover {
+              color: red;
+              cursor: pointer;
+              -webkit-transform: scale(1.3);
+                      transform: scale(1.3); }
+        .wrap .todo-main-list .completed label {
+          text-decoration: line-through;
+          color: #8c8c8c;
+          pointer-events: none; }
+    .wrap .todo-footer {
+      background-color: #e6e6e6;
+      padding: .25vw; }
+
+/*# sourceMappingURL=app.component.css.map */
