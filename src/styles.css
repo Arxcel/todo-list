@@ -3,3 +3,6 @@ body {
   background: url("img/bg.jpg") repeat;
  font-size: 16px;
 }
+button {
+ outline: none;
+ }
