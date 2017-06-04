@@ -34,8 +34,10 @@ export class AppComponent {
       }
     }
     itemsArr.sort(function (a, b) {
-      let var1 = parseInt(a.querySelector(".todo-content").innerHTML, 10),
-        var2 = parseInt(b.querySelector(".todo-content").innerHTML, 10);
+      let el1 = a.querySelector(".todo-content").innerHTML,
+        el2 = b.querySelector(".todo-content").innerHTML,
+        var1 = parseInt(el1.slice(5), 10),
+        var2 = parseInt(el2.slice(5), 10);
       return var1 - var2;
     });
     for (let i = 0; i < itemsArr.length; ++i) {
@@ -52,8 +54,10 @@ export class AppComponent {
       }
     }
     itemsArr.sort(function (a, b) {
-      let var1 = a.querySelector(".todo-content").innerHTML.slice(3),
-        var2 = b.querySelector(".todo-content").innerHTML.slice(3);
+      let el1 = a.querySelector(".todo-content").innerHTML,
+        el2 = b.querySelector(".todo-content").innerHTML,
+        var1 = el1.slice(el1.indexOf(" ")),
+        var2 = el2.slice(el2.indexOf(" "));
       return var1 === var2 ? 0 : (var1 > var2 ? 1 : -1);
     });
 
