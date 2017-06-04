@@ -29,7 +29,7 @@
           (click)="toggleTodoComplete(todo)" 
           [checked]="todo.complete"
                 >
-          <label class="todo-content">{{todo.id}}. {{todo.title }}</label>
+          <label class="todo-content">Task №{{todo.id}} : {{todo.title }}</label>
           <button 
           class="destroy glyphicon glyphicon-remove-sign" 
           (click)="removeTodo(todo) || log()"></button>
